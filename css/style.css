@@ -3,9 +3,93 @@ html,body{
     margin: 0;
     scroll-behavior: smooth;
 }
-/* *{
-    outline: 2px solid red;
-} */
+*{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+p, h1,h2,h3,h4,h5,h6:hover{
+    cursor:default;
+}
+
+header::before {
+    content: "";
+    background: url('../img/mac.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 830px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.navbar a:hover {
+    color: grey;
+}
+
+
+#home {
+    color: white;
+    height: 770px;
+}
+
+#home h1 {
+    display: block;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.head-intro {
+    padding-left: 10%;
+    position: absolute;
+    top: 30%;
+}
+
+.learn {
+    background-color: rgb(162, 162, 162);
+    font-size: 18px;
+    padding: 10px;
+    padding-inline: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.learn:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    width: fit-content;
+}
+
+.icons p {
+    padding-inline: 0.3rem;
+    font-size: larger;
+}
+
+.fa:hover {
+    font-size: large;
+    color: rgb(175, 175, 175);
+}
 .contact{
     background-color: rgb(241, 241, 241);
     color: black;
@@ -17,7 +101,8 @@ html,body{
     padding-bottom: 10px;
 }
 .contact h1{
-    font-size: 1em;
+    font-size: 2em!important;
+    padding-top: 20px;
 
 }
 .contact p{
@@ -56,16 +141,16 @@ html,body{
     /* padding-inline: 30px; */
 
 }
+#msg-btn:hover{
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+}
 #msg-btn .fa{
     color: rgb(255, 255, 255);
     font-size: 18px;
 }
 
 i:hover {
-    cursor: pointer;
-}
-
-#msg-btn:hover {
     cursor: pointer;
 }
 footer{
@@ -103,14 +188,11 @@ a{
 i{
     margin-inline:0.3em;
 }
-i:hover{
-    cursor: pointer;
-}
 .fa{
     color: rgb(255, 255, 255);
     font-size: inherit;
     font-size: 18px;
-    padding-inline: 1rem;
+    padding-inline: 0.24rem;
 }
 .sm-icons{
     display: flex;
@@ -124,83 +206,4 @@ i:hover{
     color: white;
     text-align: center;
     font-size: xx-small;
-}
-* {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-}
-
-header::before {
-    content: "";
-    background: url('../img/mac.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 830px;
-    width: 100%;
-    opacity: 0.9;
-    z-index: -1;
-}
-
-.navigation {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 1rem;
-    padding: 0.6rem;
-}
-
-.navbar a:hover {
-    color: grey;
-}
-
-
-#home {
-    color: white;
-    height: 830px;
-}
-
-#home h1 {
-    display: block;
-    font-size: 64px;
-    font-weight: 400;
-
-}
-
-.head-intro {
-    padding-left: 10%;
-    position: absolute;
-    top: 20%;
-}
-
-.learn {
-    background-color: rgb(162, 162, 162);
-    font-size: 18px;
-    padding: 10px;
-    padding-inline: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.icons {
-    display: flex;
-    width: fit-content;
-}
-
-.icons p {
-    padding-inline: 0.3rem;
-    font-size: larger;
-}
-
-.fa:hover {
-    font-size: large;
-    color: white;
 }
