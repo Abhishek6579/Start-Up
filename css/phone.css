@@ -1,0 +1,16 @@
+html{
+    overflow-x: hidden;
+}
+.navbar a{
+    padding: 2px;
+}
+.head-intro{
+    padding-left: 0;
+    padding-right: 10px;
+}
+#home h1{
+    font-size: 40px!important;
+}
+p{
+    display: block;
+}
